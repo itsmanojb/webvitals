@@ -13,6 +13,10 @@
     "name": "Manoj Barman",
     "url": "https://manojbarman.in"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsmanojb/webvitals.git"
+  },
   "devDependencies": {
     "@babel/core": "7.9.6",
     "@babel/preset-env": "^7.10.3",

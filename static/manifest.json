@@ -3,7 +3,6 @@
   "name": "Webvitals",
   "version": "0.0.1",
   "description": "Measure web-vitals (performance metrics) of any website.",
-  "default_locale": "en",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
