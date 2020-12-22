@@ -1,2 +1,2 @@
-# Webvital Chrome Extension
-Chrome extension to measure performace of any website.
+# Webvitals - Chrome Extension
+Chrome extension to measure performance of any website.
