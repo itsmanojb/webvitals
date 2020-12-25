@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Webvitals",
-  "version": "0.0.1",
-  "description": "Measure web-vitals (performance metrics) of any website.",
+  "name": "WebVitals",
+  "version": "1.0.0",
+  "description": "Extension to measure Webvitals / Performances Metrices i.e. FCP, TTFB, LCP, FID, CLS of any website.",
   "background": {
     "scripts": ["background.js"],
     "persistent": false

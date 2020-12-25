@@ -10,7 +10,7 @@ infoDiv.style.color = '#FFF';
 infoDiv.style.padding = '1.5rem';
 infoDiv.style.fontFamily = 'Helvetica';
 infoDiv.style.fontSize = '15px';
-infoDiv.style.borderRadius = '2px';
+infoDiv.style.borderRadius = '4px';
 
 document.body.appendChild(infoDiv);
 
@@ -26,14 +26,17 @@ const gatherMetrics = ({ name, value }) => {
   });
 
   const metricsHTML = Object.keys(metrics)
-    .map((key) => `<div >${key}</div><div>${Math.round(metrics[key])}</div>`)
+    .map(
+      (key) =>
+        `<div>${key}</div><div>${Math.round(
+          metrics[key]
+        )} <small>ms</small></div>`
+    )
     .join('');
 
   infoDiv.innerHTML = `
   <div style="font-weight:bold; font-size:18px;">Web Vitals</div>
-  <div style="display:grid; grid-template-columns:1fr 1fr; grid-column-gap:10px;margin:10px 0">
-    <div>Metric</div>
-    <div>Value</div>
+  <div style="display:grid; grid-template-columns:1fr 1fr; grid-column-gap:1rem;margin:10px 0">
     ${metricsHTML}
   </div>
   `;
